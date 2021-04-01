@@ -10,7 +10,7 @@ window.iconbitmap('projects\icons\yt.ico')
 def Downloader():     
     url =YouTube(str(link.get()))
     video = url.streams.first()
-    video.download('\Downloads')
+    video.download('Downloads')
     Label(window, text = 'DOWNLOADED', font = 'arial 15').place(x= 180 , y = 210)  
 
 Button(window,text = 'DOWNLOAD', font = 'arial 15 bold' ,bg = 'red', padx = 2, command = Downloader).place(x=180 ,y = 150)
