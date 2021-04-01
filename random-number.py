@@ -6,7 +6,6 @@
 from tkinter import *
 import random
 
-
 Npc = 2
 nUser = 0
 MaxLimit = 0 
