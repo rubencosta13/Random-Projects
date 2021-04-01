@@ -1,22 +1,16 @@
 from tkinter import *
 from pytube import YouTube
-import os
 
-path ="C:\Music"
-path = os.path.realpath(path)
-os.startfile(path)
 
 window = Tk()
 window.geometry('500x350')
-window.resizable(0,0)
-window.iconbitmap('icons\yt.ico')
-
+window.iconbitmap('projects\icons\yt.ico')
 
 
 def Downloader():     
     url =YouTube(str(link.get()))
     video = url.streams.first()
-    video.download(r'C:\Music')
+    video.download('Downloads')
     Label(window, text = 'DOWNLOADED', font = 'arial 15').place(x= 180 , y = 210)  
 
 Button(window,text = 'DOWNLOAD', font = 'arial 15 bold' ,bg = 'red', padx = 2, command = Downloader).place(x=180 ,y = 150)
