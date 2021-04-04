@@ -9,7 +9,7 @@ import time
 window = Tk()
 window.geometry('500x350')
 window.resizable(0,0)
-window.iconbitmap('icons\yt.ico')
+#window.iconbitmap('icons\yt.ico')
 
 
 def hide():
